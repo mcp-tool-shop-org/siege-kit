@@ -10,20 +10,30 @@ const DEFAULT_SHAPE: BodyShape = { type: 'circle', radius: 10 };
  * Factory that creates a fully-populated {@link PhysicsBody} from a partial
  * configuration. Any omitted fields receive sensible defaults.
  *
- * A unique `id` is generated via `crypto.randomUUID()` unless one is provided.
+ * - `invMass` is computed automatically from `mass` (0 for static bodies).
+ * - `previousPosition` is initialized to match `position` (no interpolation delta).
+ * - `isSleeping` defaults to false; `sleepTimer` starts at 0.
  */
 export function createBody(
   partial: Partial<PhysicsBody> = {},
 ): PhysicsBody {
+  const isStatic = partial.isStatic ?? false;
+  const mass = isStatic ? 0 : (partial.mass ?? 1);
+  const position = partial.position ?? { ...ZERO };
+
   return {
     id: partial.id ?? crypto.randomUUID(),
-    position: partial.position ?? { ...ZERO },
+    position: { ...position },
+    previousPosition: partial.previousPosition ?? { ...position },
     velocity: partial.velocity ?? { ...ZERO },
     acceleration: partial.acceleration ?? { ...ZERO },
-    mass: partial.mass ?? 1,
+    mass,
+    invMass: mass > 0 ? 1 / mass : 0,
     restitution: partial.restitution ?? 0.5,
     friction: partial.friction ?? 0.3,
-    isStatic: partial.isStatic ?? false,
+    isStatic,
+    isSleeping: partial.isSleeping ?? false,
+    sleepTimer: partial.sleepTimer ?? 0,
     shape: partial.shape ?? { ...DEFAULT_SHAPE },
     userData: partial.userData,
   };

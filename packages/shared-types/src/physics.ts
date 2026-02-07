@@ -13,12 +13,16 @@ export type BodyShape =
 export interface PhysicsBody {
   id: string;
   position: Vec2;
+  previousPosition: Vec2; // for render interpolation
   velocity: Vec2;
   acceleration: Vec2;
   mass: number;
+  invMass: number; // cached 1/mass (0 for static)
   restitution: number; // 0-1
   friction: number;
   isStatic: boolean;
+  isSleeping: boolean;
+  sleepTimer: number; // frames below sleep threshold
   shape: BodyShape;
   userData?: Record<string, unknown>;
 }

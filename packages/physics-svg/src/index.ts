@@ -6,6 +6,22 @@
 export { PhysicsEngine } from './core/engine.js';
 export { createBody } from './core/body.js';
 export { createConstraint } from './core/constraint.js';
+export * as Vec2 from './core/vec2.js';
+
+// Sleeping
+export { wakeBody } from './core/sleeping.js';
+
+// Forces
+export {
+  applyGravity,
+  applyDrag,
+  applyWind,
+  applyAttraction,
+  applyForceFields,
+} from './core/forces.js';
+
+// Collision (types only — detection/resolution is internal to World)
+export type { CollisionPair } from './core/collision.js';
 
 // Rendering
 export { SvgRenderer } from './rendering/svg-renderer.js';
@@ -27,7 +43,7 @@ export { AnimationEmitter } from './devtools/emitter.js';
 
 // Re-export key types from siege-types for consumer convenience
 export type {
-  Vec2,
+  Vec2 as Vec2Type,
   BodyShape,
   PhysicsBody,
   ConstraintType,

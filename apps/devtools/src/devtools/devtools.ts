@@ -2,8 +2,8 @@ chrome.devtools.panels.create(
   'Animations',
   '',
   'src/panel/panel.html',
-  (panel) => {
-    // Panel created
+  (_panel) => {
+    // Panel created — will be used for show/hide hooks later
     console.log('Animation DevTools panel created');
   },
 );

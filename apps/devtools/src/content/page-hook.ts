@@ -172,5 +172,5 @@ window.addEventListener('message', (event: MessageEvent) => {
   if (event.data?.source !== MESSAGE_SOURCE) return;
 
   // TODO -- handle DevToolsToPageMessage commands (pause, resume, seek, etc.)
-  const _message = event.data.payload;
+  void event.data.payload;
 });

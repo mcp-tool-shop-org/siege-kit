@@ -79,12 +79,15 @@ export function PhysicsScene({
       const dt = Math.min((now - lastTime) / 1000, 0.05); // cap at 50 ms
       lastTime = now;
 
-      engine.step(dt);
+      engine.update(dt);
 
-      rendererRef.current?.render(
-        engine.getBodies(),
-        engine.getConstraints(),
-      );
+      if (rendererRef.current) {
+        rendererRef.current.alpha = engine.alpha;
+        rendererRef.current.render(
+          engine.getBodies(),
+          engine.getConstraints(),
+        );
+      }
 
       rafId = requestAnimationFrame(loop);
     };

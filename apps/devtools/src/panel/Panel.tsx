@@ -4,7 +4,7 @@ import type { AnimationTimeline } from '@mcp-tool-shop/siege-types';
 // TODO -- connect to background port for real animation data
 
 export function Panel() {
-  const [animations, setAnimations] = useState<AnimationTimeline[]>([]);
+  const [animations, _setAnimations] = useState<AnimationTimeline[]>([]);
 
   return (
     <div style={{ fontFamily: 'system-ui, sans-serif', padding: '12px' }}>
