@@ -24,6 +24,7 @@ export interface DiceRoll {
   isDoubles: boolean;
   movesAvailable: number; // 2 or 4
   movesUsed: number;
+  usedValues: number[]; // which specific die values were consumed
 }
 
 export interface DoublingCubeState {

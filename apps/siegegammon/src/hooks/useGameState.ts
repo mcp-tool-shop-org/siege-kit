@@ -1,29 +1,24 @@
-import { useState, useCallback } from 'react';
-import type { GameState } from '@mcp-tool-shop/siege-types';
+import { useState, useCallback, useMemo } from 'react';
+import type { GameState, Move } from '@mcp-tool-shop/siege-types';
 import { createInitialGameState } from '../engine/game-state.js';
+import { gameReducer, type GameAction } from '../engine/reducer.js';
+import { generateAllLegalMoves } from '../engine/move-generator.js';
 
-export type GameAction =
-  | { type: 'reset' }
-  // TODO: add deploy, advance, roll, double, etc.
-  | { type: '__placeholder' };
+export { type GameAction } from '../engine/reducer.js';
 
-/**
- * Stub game state hook.
- * TODO: replace dispatch with a proper reducer once game logic is implemented.
- */
 export function useGameState() {
   const [gameState, setGameState] = useState<GameState>(createInitialGameState);
 
   const dispatch = useCallback((action: GameAction) => {
-    switch (action.type) {
-      case 'reset':
-        setGameState(createInitialGameState());
-        break;
-      default:
-        // TODO: handle game actions
-        break;
-    }
+    setGameState(prev => gameReducer(prev, action));
   }, []);
 
-  return { gameState, dispatch } as const;
+  const legalMoves = useMemo((): Move[] => {
+    if (gameState.turnPhase !== 'moving' || !gameState.dice || gameState.gamePhase !== 'playing') {
+      return [];
+    }
+    return generateAllLegalMoves(gameState, gameState.currentPlayer, gameState.dice);
+  }, [gameState]);
+
+  return { gameState, dispatch, legalMoves } as const;
 }
