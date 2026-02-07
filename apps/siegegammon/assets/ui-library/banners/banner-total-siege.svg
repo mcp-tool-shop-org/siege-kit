@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 400 140"
+  width="400"
+  height="140">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <defs>
+    <linearGradient id="total-siege-bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a0808" />
+      <stop offset="100%" stop-color="#0d0404" />
+    </linearGradient>
+    <linearGradient id="total-siege-text-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c840" />
+      <stop offset="100%" stop-color="#c5a028" />
+    </linearGradient>
+  </defs>
+
+  <!-- Total Siege Banner: triple stakes, most dramatic -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Background" id="layer-background">
+    <rect x="0" y="0" width="400" height="140" rx="10"
+      fill="url(#total-siege-bg-grad)" stroke="#e8c840" stroke-width="3" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Inner Glow" id="layer-inner-glow">
+    <rect x="5" y="5" width="390" height="130" rx="7"
+      fill="none" stroke="#a82020" stroke-width="1.5" opacity="0.5" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Crown" id="layer-crown">
+    <!-- V-shape laurel/crown above title -->
+    <path d="M170,25 L200,15 L230,25"
+      stroke="#e8c840" stroke-width="1.5" fill="none" stroke-linecap="round" />
+    <!-- Small accent dots at crown tips -->
+    <circle cx="170" cy="25" r="1.5" fill="#e8c840" opacity="0.6" />
+    <circle cx="200" cy="15" r="1.5" fill="#e8c840" opacity="0.8" />
+    <circle cx="230" cy="25" r="1.5" fill="#e8c840" opacity="0.6" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Debris" id="layer-debris">
+    <!-- Scattered debris rectangles along bottom -->
+    <rect x="45" y="118" width="3" height="8" rx="0.5" fill="#8b1a1a" opacity="0.5"
+      transform="rotate(-15,46,122)" />
+    <rect x="95" y="122" width="2" height="6" rx="0.5" fill="#8b1a1a" opacity="0.3"
+      transform="rotate(25,96,125)" />
+    <rect x="140" y="116" width="3" height="8" rx="0.5" fill="#8b1a1a" opacity="0.6"
+      transform="rotate(-40,141,120)" />
+    <rect x="200" y="120" width="2" height="7" rx="0.5" fill="#8b1a1a" opacity="0.4"
+      transform="rotate(10,201,123)" />
+    <rect x="255" y="118" width="3" height="6" rx="0.5" fill="#8b1a1a" opacity="0.5"
+      transform="rotate(-30,256,121)" />
+    <rect x="310" y="122" width="2" height="8" rx="0.5" fill="#8b1a1a" opacity="0.35"
+      transform="rotate(45,311,126)" />
+    <rect x="350" y="117" width="3" height="7" rx="0.5" fill="#8b1a1a" opacity="0.55"
+      transform="rotate(-20,351,120)" />
+    <rect x="68" y="120" width="2" height="6" rx="0.5" fill="#8b1a1a" opacity="0.4"
+      transform="rotate(35,69,123)" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Text" id="layer-text">
+    <text x="200" y="60" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="42" font-weight="bold"
+      fill="url(#total-siege-text-grad)" letter-spacing="5">TOTAL SIEGE</text>
+    <text x="200" y="88" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="13" font-style="italic"
+      fill="#a82020">Triple Stakes &#x2014; Complete Rout</text>
+  </g>
+
+</svg>

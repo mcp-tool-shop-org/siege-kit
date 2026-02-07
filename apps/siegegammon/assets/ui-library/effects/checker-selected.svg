@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 36 36"
+  width="36"
+  height="36">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <!-- Checker Selected: selection ring around a checker -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Inner Ring" id="layer-inner-ring">
+    <circle cx="18" cy="18" r="14"
+      fill="none" stroke="#c5a028" stroke-width="1" opacity="0.4" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Outer Ring" id="layer-outer-ring">
+    <circle cx="18" cy="18" r="16"
+      fill="none" stroke="#e8c840" stroke-width="2"
+      stroke-dasharray="4,3" opacity="0.9" />
+  </g>
+
+</svg>

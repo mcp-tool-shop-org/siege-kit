@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  viewBox="0 0 28 28"
+  width="28"
+  height="28">
+
+  <sodipodi:namedview inkscape:document-units="px" />
+
+  <defs>
+    <!-- Face radial gradient -->
+    <radialGradient id="arctic-locked-face" cx="0.4" cy="0.35" r="0.55">
+      <stop offset="0%" stop-color="#e8eef5" />
+      <stop offset="50%" stop-color="#c8d4e2" />
+      <stop offset="100%" stop-color="#a0b0c4" />
+    </radialGradient>
+
+    <!-- Edge radial gradient for depth -->
+    <radialGradient id="arctic-locked-edge" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="75%" stop-color="#a0b0c4" />
+      <stop offset="100%" stop-color="#708090" />
+    </radialGradient>
+
+    <!-- Cyan glow filter -->
+    <filter id="arctic-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feFlood flood-color="#40b0d0" flood-opacity="0.6" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Drop shadow filter -->
+    <filter id="arctic-locked-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur" />
+      <feOffset in="blur" dx="1" dy="1" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Checker layer -->
+  <g inkscape:groupmode="layer" inkscape:label="Checker" filter="url(#arctic-glow)">
+    <!-- Edge / base circle -->
+    <circle cx="14" cy="14" r="12" fill="url(#arctic-locked-edge)" filter="url(#arctic-locked-shadow)" />
+
+    <!-- Face -->
+    <circle cx="14" cy="14" r="11" fill="url(#arctic-locked-face)" />
+
+    <!-- Inner decorative ring -->
+    <circle cx="14" cy="14" r="9" fill="none" stroke="#a0b0c4" stroke-width="0.75" />
+
+    <!-- Highlight ellipse -->
+    <ellipse cx="11" cy="11" rx="4" ry="3" fill="white" opacity="0.2" />
+  </g>
+
+  <!-- Lock icon layer -->
+  <g inkscape:groupmode="layer" inkscape:label="Lock Icon">
+    <g transform="translate(14,14)" opacity="0.8">
+      <!-- Shield path -->
+      <path
+        d="M0,-7 L5,-4 L5,1 C5,5 0,7 0,7 C0,7 -5,5 -5,1 L-5,-4 Z"
+        fill="#40b0d0"
+        stroke="none" />
+      <!-- Battlement rects -->
+      <rect x="-4" y="-5" width="2" height="2" fill="#40b0d0" />
+      <rect x="2" y="-5" width="2" height="2" fill="#40b0d0" />
+      <!-- Gate rect -->
+      <rect x="-1.5" y="0" width="3" height="4" rx="1.5" ry="1.5" fill="#14161a" opacity="0.5" />
+    </g>
+  </g>
+</svg>

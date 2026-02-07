@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  width="28"
+  height="28"
+  viewBox="0 0 28 28"
+  version="1.1">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    showgrid="true"
+    inkscape:zoom="16">
+    <inkscape:grid type="xygrid" spacingx="1" spacingy="1" />
+  </sodipodi:namedview>
+
+  <defs>
+    <radialGradient id="obsidianFace" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#4a4a4a" />
+      <stop offset="40%" stop-color="#2a2a2a" />
+      <stop offset="100%" stop-color="#111111" />
+    </radialGradient>
+
+    <radialGradient id="obsidianEdge" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#1a1a1a" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
+    </radialGradient>
+
+    <!-- Silver glow for locked state -->
+    <filter id="lockedGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feFlood flood-color="#a0a0b0" flood-opacity="0.5" result="color" />
+      <feComposite in="color" in2="blur" operator="in" result="glow" />
+      <feMerge>
+        <feMergeNode in="glow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Locked Checker" id="layer-checker-locked">
+    <!-- Checker with silver glow -->
+    <circle cx="14" cy="14" r="12" fill="url(#obsidianFace)" filter="url(#lockedGlow)" />
+    <circle cx="14" cy="14" r="12" fill="url(#obsidianEdge)" />
+
+    <!-- Lock icon (small shield/castle battlement) -->
+    <g transform="translate(14,14)" fill="#a0a0b0" opacity="0.8">
+      <path d="M0,-7 L5,-4 L5,1 C5,5 0,7 0,7 C0,7 -5,5 -5,1 L-5,-4 Z"
+            fill="none" stroke="#a0a0b0" stroke-width="1" />
+      <rect x="-3" y="-3" width="2" height="3" />
+      <rect x="1" y="-3" width="2" height="3" />
+      <rect x="-1" y="0" width="2" height="3" rx="1" />
+    </g>
+  </g>
+</svg>

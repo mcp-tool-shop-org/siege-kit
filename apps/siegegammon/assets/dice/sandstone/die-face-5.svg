@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <linearGradient id="faceGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8dcc0"/>
+      <stop offset="100%" stop-color="#d0c0a0"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feFlood flood-color="#000" flood-opacity="0.25" result="flood"/>
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="shadow"/>
+      <feOffset dx="1" dy="1" result="offset"/>
+      <feMerge>
+        <feMergeNode in="offset"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g inkscape:groupmode="layer" inkscape:label="Die Face 5">
+    <rect x="2" y="2" width="56" height="56" rx="8" ry="8"
+          fill="url(#faceGrad)" stroke="#8a7d60" stroke-width="1.5"
+          filter="url(#shadow)"/>
+    <circle cx="18" cy="18" r="5" fill="#3a2218"/>
+    <circle cx="42" cy="18" r="5" fill="#3a2218"/>
+    <circle cx="30" cy="30" r="5" fill="#3a2218"/>
+    <circle cx="18" cy="42" r="5" fill="#3a2218"/>
+    <circle cx="42" cy="42" r="5" fill="#3a2218"/>
+  </g>
+</svg>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  viewBox="0 0 28 28"
+  width="28"
+  height="28">
+
+  <sodipodi:namedview inkscape:document-units="px" />
+
+  <defs>
+    <!-- Face radial gradient -->
+    <radialGradient id="arctic-face" cx="0.4" cy="0.35" r="0.55">
+      <stop offset="0%" stop-color="#e8eef5" />
+      <stop offset="50%" stop-color="#c8d4e2" />
+      <stop offset="100%" stop-color="#a0b0c4" />
+    </radialGradient>
+
+    <!-- Edge radial gradient for depth -->
+    <radialGradient id="arctic-edge" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="75%" stop-color="#a0b0c4" />
+      <stop offset="100%" stop-color="#708090" />
+    </radialGradient>
+
+    <!-- Drop shadow filter -->
+    <filter id="arctic-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1" result="blur" />
+      <feOffset in="blur" dx="1" dy="1" result="shadow" />
+      <feMerge>
+        <feMergeNode in="shadow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Checker layer -->
+  <g inkscape:groupmode="layer" inkscape:label="Checker">
+    <!-- Edge / base circle -->
+    <circle cx="14" cy="14" r="12" fill="url(#arctic-edge)" filter="url(#arctic-shadow)" />
+
+    <!-- Face -->
+    <circle cx="14" cy="14" r="11" fill="url(#arctic-face)" />
+
+    <!-- Inner decorative ring -->
+    <circle cx="14" cy="14" r="9" fill="none" stroke="#a0b0c4" stroke-width="0.75" />
+
+    <!-- Highlight ellipse -->
+    <ellipse cx="11" cy="11" rx="4" ry="3" fill="white" opacity="0.2" />
+  </g>
+</svg>

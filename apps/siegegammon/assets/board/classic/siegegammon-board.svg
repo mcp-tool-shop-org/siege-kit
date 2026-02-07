@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  width="900"
+  height="700"
+  viewBox="0 0 900 700"
+  version="1.1">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    showgrid="true"
+    inkscape:zoom="1"
+    inkscape:cx="450"
+    inkscape:cy="350"
+    inkscape:window-maximized="1"
+    showguides="true">
+    <inkscape:grid type="xygrid" spacingx="10" spacingy="10" />
+  </sodipodi:namedview>
+
+  <defs>
+    <!-- SiegeGammon Color Palette -->
+    <!-- Board frame: dark walnut -->
+    <!-- Playing surface: forest green felt -->
+    <!-- Points: alternating crimson & gold -->
+    <!-- Bar: dark walnut matching frame -->
+
+    <linearGradient id="feltGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2d5a27" />
+      <stop offset="100%" stop-color="#1e3d1a" />
+    </linearGradient>
+
+    <linearGradient id="woodGradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5c3317" />
+      <stop offset="50%" stop-color="#4a2810" />
+      <stop offset="100%" stop-color="#3b1f0b" />
+    </linearGradient>
+  </defs>
+
+  <!-- ========== LAYER: Board Frame ========== -->
+  <g inkscape:groupmode="layer" inkscape:label="Frame" id="layer-frame">
+    <!-- Outer frame -->
+    <rect x="0" y="0" width="900" height="700" rx="12" ry="12"
+          fill="url(#woodGradient)" stroke="#2a1508" stroke-width="3" />
+    <!-- Inner playing surface -->
+    <rect x="30" y="30" width="840" height="640" rx="4" ry="4"
+          fill="url(#feltGradient)" />
+  </g>
+
+  <!-- ========== LAYER: Bar ========== -->
+  <g inkscape:groupmode="layer" inkscape:label="Bar" id="layer-bar">
+    <!-- Center bar dividing the two halves -->
+    <rect x="430" y="30" width="40" height="640"
+          fill="url(#woodGradient)" stroke="#2a1508" stroke-width="1" />
+  </g>
+
+  <!-- ========== LAYER: Points (Triangles) ========== -->
+  <g inkscape:groupmode="layer" inkscape:label="Points" id="layer-points">
+
+    <!-- === BOTTOM ROW (Points 1-12 from right to left) === -->
+    <!-- Right half, bottom: Points 1-6 (Garrison for bottom player) -->
+
+    <!-- Point 1 (bottom-right) - Crimson -->
+    <polygon points="870,670 840,670 855,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 2 - Gold -->
+    <polygon points="840,670 810,670 825,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 3 - Crimson -->
+    <polygon points="810,670 780,670 795,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 4 - Gold -->
+    <polygon points="780,670 750,670 765,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 5 - Crimson -->
+    <polygon points="750,670 720,670 735,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 6 - Gold -->
+    <polygon points="720,670 690,670 705,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+
+    <!-- Left half, bottom: Points 7-12 (Outer Field) -->
+    <!-- Point 7 - Crimson -->
+    <polygon points="430,670 400,670 415,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 8 - Gold -->
+    <polygon points="400,670 370,670 385,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 9 - Crimson -->
+    <polygon points="370,670 340,670 355,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 10 - Gold -->
+    <polygon points="340,670 310,670 325,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 11 - Crimson -->
+    <polygon points="310,670 280,670 295,400" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 12 - Gold -->
+    <polygon points="280,670 250,670 265,400" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+
+    <!-- === TOP ROW (Points 13-24 from left to right) === -->
+    <!-- Left half, top: Points 13-18 (Far Field) -->
+
+    <!-- Point 13 - Crimson -->
+    <polygon points="250,30 280,30 265,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 14 - Gold -->
+    <polygon points="280,30 310,30 295,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 15 - Crimson -->
+    <polygon points="310,30 340,30 325,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 16 - Gold -->
+    <polygon points="340,30 370,30 355,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 17 - Crimson -->
+    <polygon points="370,30 400,30 385,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 18 - Gold -->
+    <polygon points="400,30 430,30 415,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+
+    <!-- Right half, top: Points 19-24 (Siege Zone for bottom player) -->
+    <!-- Point 19 - Crimson -->
+    <polygon points="470,30 500,30 485,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 20 - Gold -->
+    <polygon points="500,30 530,30 515,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 21 - Crimson -->
+    <polygon points="530,30 560,30 545,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 22 - Gold -->
+    <polygon points="560,30 590,30 575,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+    <!-- Point 23 - Crimson -->
+    <polygon points="590,30 620,30 605,300" fill="#8b1a1a" stroke="#6b1010" stroke-width="1" opacity="0.9" />
+    <!-- Point 24 - Gold -->
+    <polygon points="620,30 650,30 635,300" fill="#c5a028" stroke="#a08020" stroke-width="1" opacity="0.9" />
+  </g>
+
+  <!-- ========== LAYER: Zone Labels ========== -->
+  <g inkscape:groupmode="layer" inkscape:label="Zone Labels" id="layer-labels">
+    <!-- Bottom player zones -->
+    <text x="780" y="695" font-family="Georgia, serif" font-size="11"
+          fill="#c5a028" text-anchor="middle" opacity="0.7">GARRISON (1-6)</text>
+    <text x="340" y="695" font-family="Georgia, serif" font-size="11"
+          fill="#c5a028" text-anchor="middle" opacity="0.7">OUTER FIELD (7-12)</text>
+    <text x="340" y="22" font-family="Georgia, serif" font-size="11"
+          fill="#c5a028" text-anchor="middle" opacity="0.7">FAR FIELD (13-18)</text>
+    <text x="560" y="22" font-family="Georgia, serif" font-size="11"
+          fill="#c5a028" text-anchor="middle" opacity="0.7">SIEGE ZONE (19-24)</text>
+
+    <!-- Point numbers bottom row -->
+    <text x="855" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">1</text>
+    <text x="825" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">2</text>
+    <text x="795" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">3</text>
+    <text x="765" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">4</text>
+    <text x="735" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">5</text>
+    <text x="705" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">6</text>
+    <text x="415" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">7</text>
+    <text x="385" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">8</text>
+    <text x="355" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">9</text>
+    <text x="325" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">10</text>
+    <text x="295" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">11</text>
+    <text x="265" y="685" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">12</text>
+
+    <!-- Point numbers top row -->
+    <text x="265" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">13</text>
+    <text x="295" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">14</text>
+    <text x="325" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">15</text>
+    <text x="355" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">16</text>
+    <text x="385" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">17</text>
+    <text x="415" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">18</text>
+    <text x="485" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">19</text>
+    <text x="515" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">20</text>
+    <text x="545" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">21</text>
+    <text x="575" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">22</text>
+    <text x="605" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">23</text>
+    <text x="635" y="17" font-family="monospace" font-size="9" fill="#ffffff" text-anchor="middle" opacity="0.5">24</text>
+  </g>
+
+  <!-- ========== LAYER: Title / Branding ========== -->
+  <g inkscape:groupmode="layer" inkscape:label="Branding" id="layer-branding">
+    <text x="450" y="360" font-family="Georgia, serif" font-size="20" font-weight="bold"
+          fill="#c5a028" text-anchor="middle" letter-spacing="6" opacity="0.4">SIEGEGAMMON</text>
+  </g>
+
+</svg>

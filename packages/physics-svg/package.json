@@ -1,0 +1,51 @@
+{
+  "name": "@mcp-tool-shop/physics-svg",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./react": {
+      "types": "./dist/react/index.d.ts",
+      "import": "./dist/react/index.mjs",
+      "require": "./dist/react/index.cjs"
+    }
+  },
+  "files": ["dist"],
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@mcp-tool-shop/siege-types": "workspace:*"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "gsap": ">=3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": { "optional": true },
+    "react-dom": { "optional": true },
+    "gsap": { "optional": true }
+  },
+  "devDependencies": {
+    "@mcp-tool-shop/tsconfig": "workspace:*",
+    "@types/react": "^19.0",
+    "@types/react-dom": "^19.0",
+    "@vitejs/plugin-react": "^4.4",
+    "react": "^19.0",
+    "react-dom": "^19.0",
+    "gsap": "^3.12",
+    "vite": "^6.2",
+    "vite-plugin-dts": "^4.5",
+    "vitest": "^3.0",
+    "typescript": "^5.7"
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="30"
+  height="60"
+  viewBox="0 0 30 60">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-lock-arrow" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Lock Arrow"
+    id="layer-lock-arrow">
+    <!-- Arrow pointing up into a shield — checker locking into siege zone -->
+    <path
+      d="M15,55 L15,25"
+      fill="none"
+      stroke="#c5a028"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      id="lock-shaft" />
+    <!-- Small shield at top -->
+    <path
+      d="M15,8 L22,12 L22,18 C22,23 15,26 15,26 C15,26 8,23 8,18 L8,12 Z"
+      fill="#c5a028"
+      fill-opacity="0.3"
+      stroke="#c5a028"
+      stroke-width="1.5"
+      id="lock-shield" />
+  </g>
+</svg>

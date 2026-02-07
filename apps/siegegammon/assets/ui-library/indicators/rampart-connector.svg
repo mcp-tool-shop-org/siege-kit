@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="80"
+  height="12"
+  viewBox="0 0 80 12">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-rampart-connector" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Rampart Connector"
+    id="layer-rampart-connector">
+    <!-- Horizontal castle wall strip connecting consecutive fortified points -->
+    <!-- Wall body -->
+    <rect
+      x="0"
+      y="4"
+      width="80"
+      height="6"
+      rx="2"
+      fill="#c5a028"
+      fill-opacity="0.4"
+      id="wall-body" />
+    <!-- Repeating battlement pattern along top — 8 merlons -->
+    <rect x="2"  y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-1" />
+    <rect x="12" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-2" />
+    <rect x="22" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-3" />
+    <rect x="32" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-4" />
+    <rect x="42" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-5" />
+    <rect x="52" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-6" />
+    <rect x="62" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-7" />
+    <rect x="72" y="0" width="6" height="6" fill="#c5a028" fill-opacity="0.6" id="merlon-8" />
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  width="50" height="50" viewBox="0 0 50 50" version="1.1">
+
+  <defs>
+    <linearGradient id="cubeFace" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f5f0e0" />
+      <stop offset="100%" stop-color="#c9b896" />
+    </linearGradient>
+    <filter id="cubeShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Doubling Cube">
+    <!-- Cube body -->
+    <rect x="4" y="4" width="42" height="42" rx="5" ry="5"
+          fill="url(#cubeFace)" stroke="#8a7d60" stroke-width="1.5" filter="url(#cubeShadow)" />
+
+    <!-- Value display (default: 64 — change per state) -->
+    <text x="25" y="30" font-family="Georgia, serif" font-size="18" font-weight="bold"
+          fill="#2a1508" text-anchor="middle" dominant-baseline="middle">64</text>
+  </g>
+</svg>

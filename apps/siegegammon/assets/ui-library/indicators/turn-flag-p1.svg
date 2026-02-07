@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="40"
+  height="50"
+  viewBox="0 0 40 50">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-turn-flag-p1" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Turn Flag P1"
+    id="layer-turn-flag-p1">
+    <!-- Player 1 turn flag — pennant on a pole -->
+    <!-- Pole -->
+    <line
+      x1="8"
+      y1="5"
+      x2="8"
+      y2="45"
+      stroke="#8a7d60"
+      stroke-width="2"
+      stroke-linecap="round"
+      id="flag-pole" />
+    <!-- Flag pennant -->
+    <path
+      d="M8,8 L35,14 L35,24 L8,18 Z"
+      fill="#faf5e8"
+      stroke="#c5a028"
+      stroke-width="1"
+      id="flag-pennant" />
+    <!-- Player label -->
+    <text
+      x="22"
+      y="19"
+      font-size="7"
+      fill="#c5a028"
+      font-weight="bold"
+      font-family="monospace"
+      text-anchor="middle"
+      id="flag-label">P1</text>
+  </g>
+</svg>

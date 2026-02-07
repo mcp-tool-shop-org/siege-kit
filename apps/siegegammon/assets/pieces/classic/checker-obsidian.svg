@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  width="28"
+  height="28"
+  viewBox="0 0 28 28"
+  version="1.1">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    showgrid="true"
+    inkscape:zoom="16">
+    <inkscape:grid type="xygrid" spacingx="1" spacingy="1" />
+  </sodipodi:namedview>
+
+  <defs>
+    <!-- Obsidian checker gradient - deep black with gloss -->
+    <radialGradient id="obsidianFace" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#4a4a4a" />
+      <stop offset="40%" stop-color="#2a2a2a" />
+      <stop offset="100%" stop-color="#111111" />
+    </radialGradient>
+
+    <!-- Edge shadow for 3D effect -->
+    <radialGradient id="obsidianEdge" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#1a1a1a" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6" />
+    </radialGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.4" />
+    </filter>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Checker" id="layer-checker">
+    <!-- Shadow base -->
+    <circle cx="14" cy="14" r="12" fill="url(#obsidianFace)" filter="url(#shadow)" />
+
+    <!-- Main face -->
+    <circle cx="14" cy="14" r="12" fill="url(#obsidianFace)" />
+
+    <!-- Edge depth ring -->
+    <circle cx="14" cy="14" r="12" fill="url(#obsidianEdge)" />
+
+    <!-- Inner decorative ring -->
+    <circle cx="14" cy="14" r="9" fill="none" stroke="#555555" stroke-width="0.75" opacity="0.5" />
+
+    <!-- Glossy highlight -->
+    <ellipse cx="11" cy="11" rx="4" ry="3" fill="#ffffff" opacity="0.12" />
+  </g>
+</svg>

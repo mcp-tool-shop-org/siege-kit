@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 40 80"
+  width="40"
+  height="80">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <!-- Deploy Whoosh: upward motion trail for deploying a checker -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Motion Trails" id="layer-motion-trails">
+    <!-- Left arc -->
+    <path d="M10,70 Q20,40 20,20"
+      stroke="#c5a028" stroke-width="2" fill="none" opacity="0.3"
+      stroke-linecap="round" />
+
+    <!-- Center arc (strongest) -->
+    <path d="M20,75 Q20,45 20,15"
+      stroke="#c5a028" stroke-width="2.5" fill="none" opacity="0.5"
+      stroke-linecap="round" />
+
+    <!-- Right arc -->
+    <path d="M30,70 Q20,40 20,20"
+      stroke="#c5a028" stroke-width="2" fill="none" opacity="0.3"
+      stroke-linecap="round" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Leading Point" id="layer-leading-point">
+    <circle cx="20" cy="12" r="4" fill="#c5a028" opacity="0.7" />
+  </g>
+
+</svg>

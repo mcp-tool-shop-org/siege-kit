@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+     width="960" height="760" viewBox="0 0 960 760"
+     inkscape:version="1.3">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-frame"
+    inkscape:document-units="px"
+    pagecolor="#0d0d0d"
+    bordercolor="#c5a028" />
+
+  <defs>
+    <linearGradient id="frameBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d0d0d" />
+      <stop offset="100%" stop-color="#080808" />
+    </linearGradient>
+
+    <!-- 4-pointed star shape for corner decorations -->
+    <path id="fourPointStar"
+          d="M0,-6 L2,-2 L6,0 L2,2 L0,6 L-2,2 L-6,0 L-2,-2 Z"
+          fill="#c5a028" opacity="0.5" />
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Game Frame" id="layer-frame">
+
+    <!-- Outer border -->
+    <rect x="0" y="0" width="960" height="760" rx="12"
+          fill="url(#frameBg)" stroke="#c5a028" stroke-width="2" />
+
+    <!-- Inner cutout area (board sits here) -->
+    <rect x="30" y="30" width="900" height="700" rx="8"
+          fill="none" stroke="#2a1508" stroke-width="1" />
+
+    <!-- Top bar -->
+    <rect x="30" y="4" width="900" height="22" rx="4"
+          fill="#111111" opacity="0.5" />
+    <text x="480" y="18" text-anchor="middle"
+          font-family="Georgia, serif" font-size="10px"
+          fill="#c5a028" opacity="0.4" letter-spacing="6">SIEGEGAMMON</text>
+
+    <!-- Bottom bar -->
+    <rect x="30" y="734" width="900" height="22" rx="4"
+          fill="#111111" opacity="0.5" />
+
+    <!-- Corner decoration: top-left -->
+    <use href="#fourPointStar" transform="translate(15,15)" />
+
+    <!-- Corner decoration: top-right -->
+    <use href="#fourPointStar" transform="translate(945,15)" />
+
+    <!-- Corner decoration: bottom-left -->
+    <use href="#fourPointStar" transform="translate(15,745)" />
+
+    <!-- Corner decoration: bottom-right -->
+    <use href="#fourPointStar" transform="translate(945,745)" />
+
+  </g>
+</svg>

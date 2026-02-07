@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#c5a028"/>
+    </linearGradient>
+    <linearGradient id="darkBgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#1a1408"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background with crimson stroke -->
+  <rect x="2" y="2" width="44" height="44" rx="8"
+        fill="url(#darkBgGrad)" stroke="#8b1a1a" stroke-width="1.5"/>
+
+  <!-- Sword blade lower half (intact) -->
+  <line x1="24" y1="36" x2="24" y2="22"
+        stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Sword blade upper half (broken, angled away) -->
+  <line x1="22" y1="20" x2="28" y2="14"
+        stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Fragment splinters near the break -->
+  <line x1="26" y1="21" x2="29" y2="19"
+        stroke="url(#goldGrad)" stroke-width="1.2" stroke-linecap="round"/>
+  <line x1="21" y1="19" x2="19" y2="16"
+        stroke="url(#goldGrad)" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Crossguard / hilt -->
+  <line x1="19" y1="34" x2="29" y2="34"
+        stroke="url(#goldGrad)" stroke-width="2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 400 120"
+  width="400"
+  height="120">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <defs>
+    <linearGradient id="siege-bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#0d0d0d" />
+    </linearGradient>
+    <linearGradient id="siege-text-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e8c840" />
+      <stop offset="100%" stop-color="#c5a028" />
+    </linearGradient>
+  </defs>
+
+  <!-- Siege Banner: double stakes -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Background" id="layer-background">
+    <rect x="0" y="0" width="400" height="120" rx="10"
+      fill="url(#siege-bg-grad)" stroke="#a82020" stroke-width="2" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Inner Glow" id="layer-inner-glow">
+    <rect x="4" y="4" width="392" height="112" rx="7"
+      fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Flame Accents" id="layer-flames">
+    <!-- Flame 1 -->
+    <path d="M100,120 Q95,105 100,95 Q105,105 100,120 Z"
+      fill="#a82020" opacity="0.4" />
+    <!-- Flame 2 -->
+    <path d="M170,120 Q163,102 170,90 Q177,102 170,120 Z"
+      fill="#a82020" opacity="0.4" />
+    <!-- Flame 3 -->
+    <path d="M230,120 Q223,102 230,90 Q237,102 230,120 Z"
+      fill="#a82020" opacity="0.4" />
+    <!-- Flame 4 -->
+    <path d="M300,120 Q295,105 300,95 Q305,105 300,120 Z"
+      fill="#a82020" opacity="0.4" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Text" id="layer-text">
+    <text x="200" y="55" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="48" font-weight="bold"
+      fill="url(#siege-text-grad)" letter-spacing="8">SIEGE</text>
+    <text x="200" y="80" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="14"
+      fill="#a82020">Double Stakes</text>
+  </g>
+
+</svg>

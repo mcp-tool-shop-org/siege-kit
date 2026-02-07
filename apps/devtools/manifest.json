@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Animation DevTools",
+  "description": "Inspect and debug web animations, CSS transitions, GSAP timelines, and physics-based animations",
+  "version": "0.1.0",
+  "devtools_page": "src/devtools/devtools.html",
+  "background": {
+    "service_worker": "src/background/service-worker.ts"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content/content-script.ts"],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "16": "public/icons/icon-16.png",
+    "48": "public/icons/icon-48.png",
+    "128": "public/icons/icon-128.png"
+  }
+}

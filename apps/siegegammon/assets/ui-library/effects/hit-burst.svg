@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 60 60"
+  width="60"
+  height="60">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <defs>
+    <clipPath id="hit-burst-clip">
+      <rect x="0" y="0" width="60" height="60" />
+    </clipPath>
+  </defs>
+
+  <!-- Hit Burst: starburst explosion when a blot is hit -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Outer Ring" id="layer-outer-ring">
+    <circle cx="30" cy="30" r="25" fill="none" stroke="#8b1a1a" stroke-width="1" opacity="0.3" stroke-dasharray="3,5" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Rays" id="layer-rays">
+    <!-- Ray 0deg (up) -->
+    <polygon points="30,5 28,20 32,20" fill="#8b1a1a" opacity="0.9" />
+
+    <!-- Ray 45deg (upper-right) -->
+    <polygon points="47.68,12.32 35.07,24.93 38.61,21.39" fill="#8b1a1a" opacity="0.7"
+      transform="rotate(0,30,30)">
+    </polygon>
+    <polygon points="48,12 36,22 39,19" fill="#8b1a1a" opacity="0.7" />
+
+    <!-- Ray 90deg (right) -->
+    <polygon points="55,30 40,28 40,32" fill="#8b1a1a" opacity="0.8" />
+
+    <!-- Ray 135deg (lower-right) -->
+    <polygon points="48,48 39,36 36,39" fill="#8b1a1a" opacity="0.5" />
+
+    <!-- Ray 180deg (down) -->
+    <polygon points="30,55 28,40 32,40" fill="#8b1a1a" opacity="0.6" />
+
+    <!-- Ray 225deg (lower-left) -->
+    <polygon points="12,48 21,36 24,39" fill="#8b1a1a" opacity="0.4" />
+
+    <!-- Ray 270deg (left) -->
+    <polygon points="5,30 20,28 20,32" fill="#8b1a1a" opacity="0.7" />
+
+    <!-- Ray 315deg (upper-left) -->
+    <polygon points="12,12 24,21 21,24" fill="#8b1a1a" opacity="0.5" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Inner Circle" id="layer-inner-circle">
+    <circle cx="30" cy="30" r="6" fill="#a82020" />
+  </g>
+
+</svg>

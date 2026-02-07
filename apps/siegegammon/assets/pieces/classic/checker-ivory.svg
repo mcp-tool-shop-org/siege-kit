@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.0.dtd"
+  width="28"
+  height="28"
+  viewBox="0 0 28 28"
+  version="1.1">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    showgrid="true"
+    inkscape:zoom="16">
+    <inkscape:grid type="xygrid" spacingx="1" spacingy="1" />
+  </sodipodi:namedview>
+
+  <defs>
+    <!-- Ivory checker gradient - warm white with depth -->
+    <radialGradient id="ivoryFace" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#faf5e8" />
+      <stop offset="60%" stop-color="#e8dcc8" />
+      <stop offset="100%" stop-color="#c9b896" />
+    </radialGradient>
+
+    <!-- Edge shadow for 3D effect -->
+    <radialGradient id="ivoryEdge" cx="50%" cy="50%" r="50%">
+      <stop offset="80%" stop-color="#d4c8a8" stop-opacity="0" />
+      <stop offset="100%" stop-color="#8a7d60" stop-opacity="0.5" />
+    </radialGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="Checker" id="layer-checker">
+    <!-- Shadow base -->
+    <circle cx="14" cy="14" r="12" fill="url(#ivoryFace)" filter="url(#shadow)" />
+
+    <!-- Main face -->
+    <circle cx="14" cy="14" r="12" fill="url(#ivoryFace)" />
+
+    <!-- Edge depth ring -->
+    <circle cx="14" cy="14" r="12" fill="url(#ivoryEdge)" />
+
+    <!-- Inner decorative ring -->
+    <circle cx="14" cy="14" r="9" fill="none" stroke="#c9b896" stroke-width="0.75" opacity="0.6" />
+
+    <!-- Highlight -->
+    <ellipse cx="11" cy="11" rx="4" ry="3" fill="#ffffff" opacity="0.2" />
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 300 60"
+  width="300"
+  height="60">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <defs>
+    <linearGradient id="your-turn-bg-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1a1a" />
+      <stop offset="100%" stop-color="#111111" />
+    </linearGradient>
+  </defs>
+
+  <!-- Your Turn Banner: turn notification -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Background" id="layer-background">
+    <rect x="0" y="0" width="300" height="60" rx="8"
+      fill="url(#your-turn-bg-grad)" stroke="#c5a028" stroke-width="1.5" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Dice Icon" id="layer-dice-icon">
+    <!-- Dice body -->
+    <rect x="20" y="20" width="20" height="20" rx="3"
+      fill="none" stroke="#c5a028" stroke-width="1" opacity="0.5" />
+    <!-- Center pip -->
+    <circle cx="30" cy="30" r="2" fill="#c5a028" opacity="0.5" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Text" id="layer-text">
+    <text x="150" y="37" text-anchor="middle"
+      font-family="Georgia, 'Times New Roman', serif" font-size="22" font-weight="bold"
+      fill="#c5a028" letter-spacing="4">YOUR TURN</text>
+  </g>
+
+</svg>

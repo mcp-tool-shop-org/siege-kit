@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#c5a028"/>
+    </linearGradient>
+    <linearGradient id="darkBgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#1a1408"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="44" height="44" rx="8"
+        fill="url(#darkBgGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Die 1 -->
+  <rect x="10" y="14" width="12" height="12" rx="2"
+        fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
+  <!-- Die 1 pips (showing 2 — diagonal) -->
+  <circle cx="14" cy="18" r="1.5" fill="url(#goldGrad)"/>
+  <circle cx="18" cy="22" r="1.5" fill="url(#goldGrad)"/>
+
+  <!-- Die 2 (rotated) -->
+  <g transform="rotate(-15,32,24)">
+    <rect x="26" y="18" width="12" height="12" rx="2"
+          fill="none" stroke="url(#goldGrad)" stroke-width="1.2"/>
+    <!-- Die 2 pips (showing 3 — diagonal) -->
+    <circle cx="30" cy="22" r="1.5" fill="url(#goldGrad)"/>
+    <circle cx="32" cy="24" r="1.5" fill="url(#goldGrad)"/>
+    <circle cx="34" cy="26" r="1.5" fill="url(#goldGrad)"/>
+  </g>
+</svg>

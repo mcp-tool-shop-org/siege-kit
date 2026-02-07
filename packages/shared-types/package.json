@@ -1,0 +1,20 @@
+{
+  "name": "@mcp-tool-shop/siege-types",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --emitDeclarationOnly --outDir dist",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@mcp-tool-shop/tsconfig": "workspace:*",
+    "typescript": "^5.7"
+  }
+}

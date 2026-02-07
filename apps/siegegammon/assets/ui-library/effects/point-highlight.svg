@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  viewBox="0 0 30 280"
+  width="30"
+  height="280">
+
+  <sodipodi:namedview
+    inkscape:document-units="px"
+    pagecolor="#ffffff"
+    bordercolor="#666666" />
+
+  <!-- Point Highlight: glowing outline for a legal landing point -->
+
+  <g inkscape:groupmode="layer" inkscape:label="Inner Glow" id="layer-inner-glow">
+    <polygon points="2,278 28,278 15,15"
+      fill="#e8c840" opacity="0.05" />
+  </g>
+
+  <g inkscape:groupmode="layer" inkscape:label="Outer Triangle" id="layer-outer-triangle">
+    <polygon points="0,280 30,280 15,10"
+      fill="#c5a028" opacity="0.1"
+      stroke="#c5a028" stroke-width="2" stroke-dasharray="6,4" />
+  </g>
+
+</svg>

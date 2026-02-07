@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+     viewBox="0 0 48 48" width="48" height="48">
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e8c840"/>
+      <stop offset="100%" stop-color="#c5a028"/>
+    </linearGradient>
+    <linearGradient id="darkBgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2218"/>
+      <stop offset="100%" stop-color="#1a1408"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="44" height="44" rx="8"
+        fill="url(#darkBgGrad)" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Gear center ring -->
+  <circle cx="24" cy="24" r="6" fill="none" stroke="url(#goldGrad)" stroke-width="1.5"/>
+
+  <!-- Inner dot -->
+  <circle cx="24" cy="24" r="2" fill="url(#goldGrad)"/>
+
+  <!-- 6 gear teeth at 60-degree intervals -->
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(0,24,24)"/>
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(60,24,24)"/>
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(120,24,24)"/>
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(180,24,24)"/>
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(240,24,24)"/>
+  <rect x="22.5" y="13" width="3" height="6" rx="1" fill="url(#goldGrad)"
+        transform="rotate(300,24,24)"/>
+</svg>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-blot-warning" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Blot Warning"
+    id="layer-blot-warning">
+    <!-- Exclamation triangle warning that a checker is a vulnerable blot -->
+    <!-- Warning triangle -->
+    <polygon
+      points="12,2 22,20 2,20"
+      fill="none"
+      stroke="#8b1a1a"
+      stroke-width="1.5"
+      stroke-linejoin="round"
+      id="warning-triangle" />
+    <!-- Exclamation mark shaft -->
+    <rect
+      x="11"
+      y="8"
+      width="2"
+      height="6"
+      rx="1"
+      fill="#8b1a1a"
+      id="exclamation-shaft" />
+    <!-- Exclamation mark dot -->
+    <circle
+      cx="12"
+      cy="17"
+      r="1.2"
+      fill="#8b1a1a"
+      id="exclamation-dot" />
+  </g>
+</svg>

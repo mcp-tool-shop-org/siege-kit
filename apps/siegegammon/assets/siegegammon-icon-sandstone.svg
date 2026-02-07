@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  width="128"
+  height="128"
+  viewBox="0 0 128 128"
+  version="1.1">
+
+  <defs>
+    <!-- Bronze gradient -->
+    <linearGradient id="bronze" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0a850" />
+      <stop offset="100%" stop-color="#c89048" />
+    </linearGradient>
+
+    <!-- Sandstone background gradient -->
+    <linearGradient id="sandstoneBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1a1208" />
+      <stop offset="100%" stop-color="#0d0a04" />
+    </linearGradient>
+
+    <!-- Gate archway fill gradient -->
+    <linearGradient id="gateArch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b86830" />
+      <stop offset="100%" stop-color="#7a4020" />
+    </linearGradient>
+  </defs>
+
+  <g inkscape:groupmode="layer" inkscape:label="App Icon">
+    <!-- Background circle -->
+    <circle cx="64" cy="64" r="60" fill="url(#sandstoneBg)" stroke="url(#bronze)" stroke-width="3" />
+
+    <!-- Simplified castle gate -->
+    <g transform="translate(64, 58)">
+      <!-- Castle walls -->
+      <rect x="-30" y="-10" width="60" height="50" rx="2" ry="2"
+            fill="none" stroke="url(#bronze)" stroke-width="2.5" />
+
+      <!-- Battlements -->
+      <rect x="-28" y="-22" width="10" height="15" fill="url(#bronze)" />
+      <rect x="-5" y="-22" width="10" height="15" fill="url(#bronze)" />
+      <rect x="18" y="-22" width="10" height="15" fill="url(#bronze)" />
+
+      <!-- Gate archway -->
+      <path d="M-12,40 L-12,15 A12,12 0 0 1 12,15 L12,40"
+            fill="url(#gateArch)" stroke="url(#bronze)" stroke-width="2" />
+
+      <!-- Portcullis lines -->
+      <line x1="-4" y1="15" x2="-4" y2="40" stroke="url(#bronze)" stroke-width="1.5" opacity="0.5" />
+      <line x1="4" y1="15" x2="4" y2="40" stroke="url(#bronze)" stroke-width="1.5" opacity="0.5" />
+      <line x1="-12" y1="25" x2="12" y2="25" stroke="url(#bronze)" stroke-width="1" opacity="0.4" />
+      <line x1="-12" y1="33" x2="12" y2="33" stroke="url(#bronze)" stroke-width="1" opacity="0.4" />
+
+      <!-- Checker entering gate -->
+      <circle cx="0" cy="35" r="5" fill="#ddd0b8" stroke="url(#bronze)" stroke-width="1" />
+    </g>
+  </g>
+</svg>

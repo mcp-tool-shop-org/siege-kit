@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-fortification-badge" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Fortification Badge"
+    id="layer-fortification-badge">
+    <!-- Small castle wall icon showing a point is fortified -->
+    <!-- Wall base -->
+    <rect
+      x="2"
+      y="12"
+      width="20"
+      height="10"
+      rx="1"
+      fill="none"
+      stroke="#c5a028"
+      stroke-width="1.5"
+      id="wall-base" />
+    <!-- Three merlon battlements at top -->
+    <rect
+      x="3"
+      y="6"
+      width="4"
+      height="8"
+      fill="#c5a028"
+      id="merlon-left" />
+    <rect
+      x="10"
+      y="6"
+      width="4"
+      height="8"
+      fill="#c5a028"
+      id="merlon-center" />
+    <rect
+      x="17"
+      y="6"
+      width="4"
+      height="8"
+      fill="#c5a028"
+      id="merlon-right" />
+  </g>
+</svg>

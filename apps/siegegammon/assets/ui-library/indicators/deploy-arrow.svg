@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+  xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+  width="30"
+  height="60"
+  viewBox="0 0 30 60">
+  <sodipodi:namedview
+    inkscape:current-layer="layer-deploy-arrow" />
+  <g
+    inkscape:groupmode="layer"
+    inkscape:label="Deploy Arrow"
+    id="layer-deploy-arrow">
+    <!-- Vertical arrow pointing up — checker deploying from reserve onto board -->
+    <path
+      d="M15,55 L15,15"
+      fill="none"
+      stroke="#c5a028"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      id="deploy-shaft" />
+    <!-- Arrowhead pointing up -->
+    <polygon
+      points="15,8 9,18 21,18"
+      fill="#c5a028"
+      id="deploy-head" />
+    <!-- Small circle at bottom representing checker in reserve -->
+    <circle
+      cx="15"
+      cy="52"
+      r="5"
+      fill="none"
+      stroke="#c5a028"
+      stroke-width="1"
+      id="reserve-checker" />
+  </g>
+</svg>
