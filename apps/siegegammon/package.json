@@ -17,7 +17,8 @@
     "@mcp-tool-shop/siege-types": "workspace:*",
     "react": "^19.0",
     "react-dom": "^19.0",
-    "gsap": "^3.12"
+    "gsap": "^3.12",
+    "@mcp-tool-shop/registrum": "github:mcp-tool-shop-org/Registrum"
   },
   "devDependencies": {
     "@mcp-tool-shop/tsconfig": "workspace:*",

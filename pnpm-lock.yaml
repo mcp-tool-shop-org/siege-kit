@@ -57,6 +57,9 @@ importers:
       '@mcp-tool-shop/physics-svg':
         specifier: workspace:*
         version: link:../../packages/physics-svg
+      '@mcp-tool-shop/registrum':
+        specifier: github:mcp-tool-shop-org/Registrum
+        version: https://codeload.github.com/mcp-tool-shop-org/Registrum/tar.gz/f313a7b89eb41f13d8f2057862e31367fa32a3df
       '@mcp-tool-shop/siege-types':
         specifier: workspace:*
         version: link:../../packages/shared-types
@@ -479,6 +482,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@mcp-tool-shop/registrum@https://codeload.github.com/mcp-tool-shop-org/Registrum/tar.gz/f313a7b89eb41f13d8f2057862e31367fa32a3df':
+    resolution: {tarball: https://codeload.github.com/mcp-tool-shop-org/Registrum/tar.gz/f313a7b89eb41f13d8f2057862e31367fa32a3df}
+    version: 0.1.0
+    engines: {node: '>=18'}
 
   '@microsoft/api-extractor-model@7.32.2':
     resolution: {integrity: sha512-Ussc25rAalc+4JJs9HNQE7TuO9y6jpYQX9nWD1DhqUzYPBr3Lr7O9intf+ZY8kD5HnIqeIRJX7ccCT0QyBy2Ww==}
@@ -2227,6 +2235,8 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@mcp-tool-shop/registrum@https://codeload.github.com/mcp-tool-shop-org/Registrum/tar.gz/f313a7b89eb41f13d8f2057862e31367fa32a3df': {}
 
   '@microsoft/api-extractor-model@7.32.2':
     dependencies:
