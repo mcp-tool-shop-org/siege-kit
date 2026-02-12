@@ -1,7 +1,23 @@
 {
-  "name": "@mcp-tool-shop/physics-svg",
+  "name": "@mcptoolshop/physics-svg",
   "version": "0.1.0",
+  "description": "Deterministic 2D physics engine with SVG rendering for web games and simulations",
   "type": "module",
+  "license": "MIT",
+  "author": "MCP Tool Shop",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcp-tool-shop-org/siege-kit.git",
+    "directory": "packages/physics-svg"
+  },
+  "homepage": "https://github.com/mcp-tool-shop-org/siege-kit/tree/main/packages/physics-svg#readme",
+  "bugs": {
+    "url": "https://github.com/mcp-tool-shop-org/siege-kit/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -22,9 +38,6 @@
     "test": "vitest run",
     "clean": "rm -rf dist"
   },
-  "dependencies": {
-    "@mcp-tool-shop/siege-types": "workspace:*"
-  },
   "peerDependencies": {
     "react": ">=18.0.0",
     "react-dom": ">=18.0.0",
@@ -36,6 +49,7 @@
     "gsap": { "optional": true }
   },
   "devDependencies": {
+    "@mcp-tool-shop/siege-types": "workspace:*",
     "@mcp-tool-shop/tsconfig": "workspace:*",
     "@types/react": "^19.0",
     "@types/react-dom": "^19.0",
