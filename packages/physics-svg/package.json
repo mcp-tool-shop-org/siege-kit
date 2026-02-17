@@ -1,6 +1,6 @@
 {
   "name": "@mcptoolshop/physics-svg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deterministic 2D physics engine with SVG rendering for web games and simulations",
   "type": "module",
   "license": "MIT",
@@ -30,7 +30,10 @@
       "require": "./dist/react/index.cjs"
     }
   },
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build",
@@ -44,9 +47,15 @@
     "gsap": ">=3.0.0"
   },
   "peerDependenciesMeta": {
-    "react": { "optional": true },
-    "react-dom": { "optional": true },
-    "gsap": { "optional": true }
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    },
+    "gsap": {
+      "optional": true
+    }
   },
   "devDependencies": {
     "@mcp-tool-shop/siege-types": "workspace:*",
