@@ -14,7 +14,7 @@ export const config: SiteConfig = {
     headlineAccent: 'board games.',
     description: 'A deterministic 2D physics engine with SVG rendering, a strategy board game that inverts backgammon, and a Chrome DevTools extension — all in one Turborepo monorepo.',
     primaryCta: { href: '#packages', label: 'Explore packages' },
-    secondaryCta: { href: '#game', label: 'About the game' },
+    secondaryCta: { href: 'handbook/', label: 'Read the Handbook' },
     previews: [
       { label: 'Clone', code: 'git clone https://github.com/mcp-tool-shop-org/siege-kit.git' },
       { label: 'Install', code: 'pnpm install' },
